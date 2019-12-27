@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>입력 태그</title>
+</head>
+
+<body>
+  <form style="border: 2px solid red; width : 20%;" action="#" method="post">
+    <fieldset>
+      <legend>기본 타입 전설</legend>
+      이메일 : <input type="email" name="email" value="lalala@naver.com"><br>
+      URL : <input type="url" name="url" value="http://www.w3c.org"><br>
+      전화번호 : <input type="tel" name="tel" value="010-1234-5678"><br>
+    </fieldset>
+    <br><br>
+    <fieldset>
+      <legend>색상 월 날짜 주</legend>
+      색상 : <input type="color" name="color" value=""><br>
+      월 : <input type="month" name="month" value=""><br>
+      날짜 : <input type="date" name="date" value=""><br>
+      주 : <input type="week" name="week" value=""><br>
+    </fieldset>
+    <div style = "border : 2px dashed black; width = 30%; padding : 10px;">
+      시간 <input type="time" name="time" value=""><br>
+      지역 시간 : <input type="datetime-local" name="datetime_local" value=""><br>
+      숫자 : <input type="number" min="1" max="10" name="number" step="2"><br>
+    </div>
+
+    범위 : <input type="range" min="1" max="10" name="range" step="2"><br>
+    <input type="submit" name="submit" value="제출">
+  </form>
+  <h2>폼테그 테스트</h2>
+</body>
+
+</html>

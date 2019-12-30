@@ -1,0 +1,62 @@
+p#block-align{
+  border: 3px dotted red;
+  width: 50%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  display: block;
+  margin: 0px;
+  background-image: url("../20191230-chapter5-css박스 모델과 응용/imgs/back1.jpg");
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+div{
+  border : 30px solid transparent;
+  width: 300px;
+  height: 50px;
+  border-image: url("../20191230-chapter5-css박스 모델과 응용/imgs/border.png") 30 30 round;
+}
+
+@font-face {
+  font-family: "Vera Serif Bold;"
+  src: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
+}
+h3{
+  font-family: "Vera Serif Bold;",serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: blue;
+  background-color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: green;
+  background-color: silver;
+}
+
+a:hover {
+  text-decoration: none;
+  color: silver;
+  background-color: blue;
+}
+
+
+
+/* p {
+  background-color: #123456;
+  border: 2px solid green;
+} */
+
+h1 {
+  background-color: yellow;
+  border: 2px solid red;
+}

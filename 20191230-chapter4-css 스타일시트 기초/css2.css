@@ -1,0 +1,30 @@
+/* h1,h2{
+  color: green;
+}
+strong{
+  color: gold;
+  font-weight: bold;
+}
+em{
+  color: yellow;
+}
+li.innerList{
+  color: red;
+} */
+h1,h2{
+  color: green;
+  font-family: "궁서체",serif;
+  font-size: 25px;
+}
+strong{
+  color: gold;
+  font: Bold italic 15px "휴먼굵은팸체",serif;
+}
+em{
+  color: yellow;
+  font: Bold italic 15px "휴먼굵은팸체",serif;
+}
+li.innerList{
+  color: red;
+  font: Bold 18px "휴먼매직체",serif;
+}

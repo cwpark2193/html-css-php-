@@ -1,0 +1,18 @@
+body{
+  background-color: green;
+  margin-left: 200px;
+  background-image: url("./imgs/back1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+div{
+  background-color: yellow;
+  border: 6px dotted red;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 25%;
+  margin-left: auto;
+  margin-top: 20%;
+  margin-right: auto;
+}

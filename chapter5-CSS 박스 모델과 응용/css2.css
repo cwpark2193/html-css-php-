@@ -1,0 +1,26 @@
+table{
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border : 2px solid gray;
+}
+td,th{
+  padding: 10px;
+  border : 2px solid gray;
+}
+th{
+  color: white;
+  background-color: green;
+  font-weight: bold;
+}
+th.border{
+  border-right: 2px solid white;
+}
+tr:nth-child(even){
+  background-color: lightgray;
+}
+td:hover{
+  background-color: silver;
+  transition:width 2s, height 2s, background-color 2s, transform 2s;
+
+}

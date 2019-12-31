@@ -1,0 +1,36 @@
+ol>li{
+  color: red;
+  font-size: 30px;
+  border-left: 1px solid blue;
+}
+ol>li>p{
+  color: blue;
+}
+ol>li>p>strong{
+  font-weight: bold;
+}
+table{
+  width: auto;
+  border: 3px solid black;
+  background-color: yellow;
+  empty-cells: hide;
+}
+td{
+  border: 3px solid black;
+  background-color: red;
+}
+td.tr-table{
+  background-color: yellow;
+}
+p>a{
+  font-size: 30px;
+  color: green;
+  text-decoration: none;
+}
+p>a:hover{
+  color: red;
+  text-decoration: underline;
+}
+p>a:visited{
+  color: gold;
+}

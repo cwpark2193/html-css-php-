@@ -1,0 +1,106 @@
+body{
+  margin: 0;
+}
+#응용2-h1{
+  margin: 0;
+  text-align: center;
+  height: 100px;
+  background-color: red;
+}
+#응용2-nav{
+  margin: 0;
+  width: 33%;
+  float: left;
+  height: 200px;
+  text-align: center;
+  background-color: yellow;
+}
+#응용2-section{
+  margin: 0;
+  width: 34%;
+  height: 200px;
+  float: left;
+}
+#응용2-a1{
+  margin: 0;
+  height: 50%;
+  text-align: center;
+  background-color: blue;
+}
+#응용2-a2{
+  margin: 0;
+  height: 50%;
+
+  text-align: center;
+  background-color: green;
+}
+#응용2-aside{
+  margin: 0;
+  width: 33%;
+  height: 200px;
+  float: left;
+  text-align: center;
+  background-color: orchid;
+}
+#응용2-footer{
+  margin: 0;
+  height: 100px;
+  text-align: center;
+  clear: both;
+  background-color: orange;
+}
+#응용1-h1{
+  margin: 0;
+  text-align: center;
+  height: 100px;
+  background-color: red;
+}
+#응용1-nav{
+  margin: 0;
+  height: 100px;
+  text-align: center;
+  background-color: yellow;
+}
+#응용1-section1{
+  margin: 0;
+  height: 200px;
+  width: 50%;
+  float: left;
+}
+#응용1-section2{
+  margin: 0;
+  height: 200px;
+  width: 50%;
+  float: left;
+}
+#응용1-a1{
+  margin: 0;
+  height: 50%;
+  text-align: center;
+  background-color: blue;
+}
+#응용1-a2{
+  margin: 0;
+  height: 50%;
+  text-align: center;
+  background-color: green;
+}
+#응용1-a3{
+  margin: 0;
+  height: 50%;
+  text-align: center;
+  background-color: orchid;
+}
+#응용1-a4{
+  margin: 0;
+  height: 50%;
+  text-align: center;
+  background-color: cyan;
+}
+#응용1-footer{
+  margin: 0;
+  height: 100px;
+  text-align: center;
+  clear: both;
+  background-color: orange;
+}

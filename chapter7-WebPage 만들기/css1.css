@@ -1,0 +1,36 @@
+label{
+  width : 100px;
+  display: inline-block;
+}
+input{
+  width: 100px; 
+}
+#aside-left{
+  width: 10%;
+}
+aside#aside-left>ul{
+  border-collapse: collapse;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h3{
+  margin-bottom: 0;
+}
+aside#aside-left>ul>li{
+  text-align: center;
+  border: 1px solid white;
+  line-height: 50px;
+  background-color: black;
+}
+aside#aside-left>ul>li>a{
+  color : white;
+  text-decoration: none;
+}
+aside#aside-left>ul>li>a:visited{
+  color : white;
+  text-decoration: none;
+}
+aside#aside-left>ul>li:hover{
+  background-color : red;
+}

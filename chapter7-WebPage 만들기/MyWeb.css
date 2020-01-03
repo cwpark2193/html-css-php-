@@ -1,0 +1,129 @@
+/* 공용 */
+body{
+  padding: 15px;
+}
+strong{
+  font-size: 20px;
+}
+/* 헤더 */
+h1>a{
+  color: Blue;
+  text-decoration: none;
+}
+h1>a:visited{
+  color: Blue;
+  text-decoration: none;
+}
+/* 내비게이션 */
+nav>ul{
+  border-top: 2px solid green;
+  border-bottom: 2px solid green;
+  text-align: center;
+  padding: 10px;
+}
+nav>ul>li{
+  list-style: none;
+  display: inline;
+  letter-spacing: 10px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+nav>ul>li>a{
+  text-decoration: none;
+  color: black;
+}
+/* aside 좌측면 */
+aside#aside-leftside{
+  text-align: center;
+  width: 10%;
+  float: left;
+}
+aside#aside-leftside>ul{
+  border-collapse: collapse;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+aside#aside-leftside>ul>li{
+  text-align: center;
+  border: 1px solid white;
+  line-height: 48px;
+  background-color: black;
+}
+aside#aside-leftside>ul>li>a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+aside#aside-leftside>ul>li>a#current-category{
+  text-decoration: none;
+  color: gold;
+}
+/* 가운데 섹션 */
+section{
+  border-collapse: collapse;
+  width: 69%;
+  float: left;
+}
+section>article{
+  display: inline-block;
+  width: 49%;
+  height: 317px;
+  text-align: center;
+  float: left;
+  border: 1px solid black;
+}
+section>article>img{
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+/* aside 우측면 */
+label{
+  display: inline-block;
+}
+aside#aside-rightside{
+  width: 20%;
+  margin: 0;
+  float: right;
+}
+aside#aside-rightside>h3{
+  margin: 0;
+}
+aside#aside-rightside>form>fieldset{
+  padding: 0;
+  margin: 0;
+  border: none;
+  line-height: 30px;
+}
+aside#aside-rightside>form>fieldset>h3{
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  border: none;
+}
+
+/* 하단부 */
+footer{
+  clear: both;
+}
+/* 회원가입 */
+#article-sing-in{
+  width: 100%;
+  overflow: auto;
+}
+#article-sing-in>form{
+  width: 45%;
+  margin-left: 30%;
+}
+#article-sing-in>form>fieldset{
+  margin-bottom: 20px;
+  padding: 20px;
+  line-height: 35px;
+  text-align: left;
+}
+#article-sing-in>form>fieldset>label{
+  width: 120px;
+  display: inline-block;
+}

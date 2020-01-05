@@ -24,9 +24,9 @@ nav>ul{
 nav>ul>li{
   list-style: none;
   display: inline;
-  letter-spacing: 10px;
-  margin-left: 4%;
-  margin-right: 4%;
+  letter-spacing: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 nav>ul>li>a{
   text-decoration: none;
@@ -67,17 +67,72 @@ section{
 }
 section>article{
   display: inline-block;
+  width: 100%;
+  border: 1px solid black;
+}
+#moive-section>article{
   width: 49%;
   height: 317px;
   text-align: center;
   float: left;
-  border: 1px solid black;
+}
+#about-section>article{
+  display: inline-block;
+  float: left;
 }
 section>article>img{
   margin: 10px;
   width: 200px;
   height: 300px;
   float: left;
+}
+#map-sec-arti{
+  width: auto;
+  height: auto;
+}
+#best-movie-section>article>h2{
+  text-align: center;
+}
+#best-movie-section>article>img{
+  margin-left: 10%;
+}
+#best-movie-section>article>h3{
+  margin-top: 15%;
+  margin-left: 5%;
+  float: left;
+}
+#discount-section>article>h2{
+  text-align: center;
+}
+#discount-section>article>article{
+  padding: 5%;
+}
+#discount-section>article>article>img{
+  width: 450px;
+  height: 300px;
+}
+#discount-section>article>article>h3{
+  display: inline;
+  margin-right: 20%;
+  margin-top: 13%;
+  float: right;
+}
+#ticket-list-section>article>form{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#ticket-list-section>article>form>table{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-collapse: collapse;
+}
+#ticket-list-section>article>form>table>caption{
+  text-align: center;
+  margin-bottom: 20px;
 }
 /* aside 우측면 */
 label{

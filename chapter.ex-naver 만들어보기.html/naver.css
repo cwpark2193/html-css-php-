@@ -1,0 +1,140 @@
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+a:link {
+  text-decoration: none;
+}
+header {
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+
+.div-center {
+  width: 1100px;
+  /* border: 1px dotted gray; */
+  margin: 0 auto;
+}
+
+#header-start{
+  text-align: right;
+  margin-bottom: 30px;
+}
+#header-start a{
+  text-decoration: none;
+  color: black;
+}
+#header-start a:hover{
+  text-decoration: underline;
+  color: black;
+}
+#header-start #hover-none:hover{
+  text-decoration: none;
+}
+
+header #junior-naver{
+  display: inline-block;
+  width: 58px;
+  height: 11px;
+  background-position: 0 -158px;
+  background-image: url(./sp_main_v191212.png);
+  background-repeat: no-repeat;
+}
+header #junior-naver:hover{
+  display: inline-block;
+  width: 58px;
+  height: 11px;
+  background-position: -68px -158px;
+  background-image: url(./sp_main_v191212.png);
+  background-repeat: no-repeat;
+}
+
+header #naver-image{
+  display: inline-block;
+  width: 147px;
+  height: 55px;
+  background-position: -61px -20px;
+  background-image: url(./naver_image.png);
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative;
+  top: 25px;
+  left: 2px;
+  }
+#header-search{
+  /* border: 1px solid gray; */
+  vertical-align: middle;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+#header-search fieldset{
+  display: inline-block;
+  padding-top: 9px;
+  width: 520px;
+  height: 49px;
+  border: 1px solid #03cf5d;
+  box-sizing: border-box;
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+
+#header-search fieldset input{
+  width: 390px;
+  border: none;
+  outline: none;
+}
+#header-search fieldset button{
+  width: 49px;
+  height: 49px;
+  border: none;
+  background: #03cf5d;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+#header-search #search-image{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-position: -196px 2px;
+  background-image: url(./sp_main_v191212.png);
+  background-repeat: no-repeat;
+}
+
+nav {
+  border-bottom: 1px solid gray;
+}
+
+#nav-center{
+  width: 1100px;
+  height: 50px;
+  padding-top: 15px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#hot-keyword{
+  display: inline-block;
+  float: right;
+}

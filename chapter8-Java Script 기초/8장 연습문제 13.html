@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="check();">게임 시작</button>
+
+    <script type="text/javascript">
+      function start_game(){
+        var ask = confirm("게임을 시작하지.");
+        return ask;
+      }
+      function check(){
+        var result = start_game();
+        if(result){
+          alert("좋아, 게임을 시작하지.");
+        }else{
+          alert("거부할 수 없다. 게임을 시작한다.");
+        }
+      }
+    </script>
+  </body>
+</html>

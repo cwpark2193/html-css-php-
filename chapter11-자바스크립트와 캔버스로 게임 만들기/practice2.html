@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./practice.js" charset="utf-8"></script>
+    <style media="screen">
+      #canvas {
+        border : 1px solid blue;
+      }
+      body{
+        margin=0;
+        padding=0;
+      }
+      input{
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body >
+    <canvas id="canvas" width="500" height="400"></canvas><br>
+    <button type="button" name="button" onclick="start();">시작</button>
+    <button type="button" name="button" onclick="stop();">정지</button>
+    X:(300~500) <input type="text" id="x" value="">
+    Y:(200~400) <input type="text" id="y" value="">
+    dx:(5~10) <input type="text" id="dx" value="">
+    dy:(5~10) <input type="text" id="dy" value="">
+    <button type="button" name="button" onclick="checkLength();">검증</button>
+  </body>
+</html>

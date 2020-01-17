@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+    p{display: inline-block;}
+  </style>
+  <script type="text/javascript">
+    function totalCheck(){
+      var name = document.getElementById('names').value;
+      var name_exp = /^[가-힣]{2,8}|\s[a-zA-Z]{2,8}$/;
+      var number1 = document.getElementById('number1').value;
+      var number_exp1 = /^\d{6}$/;
+      var number2 = document.getElementById('number2').value;
+      var number_exp2 = /^[1-4]{1}\d{6}$/;
+
+      if(name.match(name_exp)){
+        return true;
+      }else{
+        alert("성명을 다시 입력하세요.");
+        names.focus();
+        return false;
+      }
+      if(number1.match(number_exp1)){
+        return true;
+      }else{
+        alert("주민 번호를 다시 입력하세요.");
+        number1.focus();
+        return false;
+      }
+      if(number2.match(number_exp2)){
+        return true;
+      }else{
+        alert("주민 번호를 다시 입력하세요.");
+        number2.focus();
+        return false;
+      }
+    }
+    function IDCheck(){
+      var ID = document.getElementById('IDs').value;
+      var ID_exp = /^[a-zA-Z][1][a-zA-Z0-9]{7,}$/;
+      if(ID.match(ID_exp)){
+        return true;
+      }else{
+        alert("사용 불가능한 아이디입니다.");
+        ID.focus();
+        return false;
+      }
+    }
+  </script>
+  <body>
+    <form action="#" method="post">
+      <legend>회원 실명 확인</legend>
+      <table border="1px solid gray;">
+        <tr>
+          <th colspan="2">이용자 본인의 이름 및 주민등록번호를 정확히 입력해주시기 바랍니다.</th>
+        </tr>
+        <tr>
+          <td><p>이름</p></td>
+          <td><input type="text" id="names" value=""> <p id="name_status">[공백없이 입력하세요.]</p></td>
+        </tr>
+        <tr>
+          <td><p>주민번호</p></td>
+          <td><input type="text" id="number1" value=""> -
+            <input type="text" id="number2" value=""> <p id="ID_status"></p></td>
+        </tr>
+        <tr>
+          <td><p>아이디</p></td>
+          <td><input type="text" id="IDs" value=""> <button type="button" name="button"
+            onclick="IDCheck();">아이디검색</button></td>
+        </tr>
+      </table>
+      <button type="button" name="button" onclick="">등록</button>
+      <button type="button" name="button" onclick="">취소</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./test.js" charset="utf-8"></script>
+    <style>
+      label{
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 0;
+        width: 150px;
+        display: inline-block;
+      }
+      p{
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="test1();">1번 문제</button>
+    <p style = "display: inline-block; margin:0; padding:0;" id = "test2">2번 문제 테스트 중</p>
+    <button type="button" name="button" onclick="test2();">2번 문제</button>
+    <form action="#" method="post">
+      숫자를 입력하시오<br><input type="text" id="number" value="">
+      <button type="button" name="button" onclick="test3(document.getElementById('number'),'잘했습니다.','숫자만 입력하세요');">3번 문제</button>
+    </form>
+    이미지 클릭!
+    <button type="button" name="button" onclick="test4();"><img src="./imgs/escape-room.jpg" alt=""
+       id="image" width="200" height="200"></button>
+  </body>
+  <form action="#" method="post">
+    <h2>회원 신청서</h2>
+    <label for="">이름*</label>
+    <input type="text" id="name" value="">
+    <p id="name_status"></p><br/>
+    <label for="">성별*</label>
+    <input type="radio" name="c1" value="v1">남성
+    <input type="radio" name="c1" value="v2">여성
+    <p id="gen_status" style="margin-left: 49px;"></p> <br/>
+    <label for="">휴대폰 번호*</label>
+    <input type="text" id="phone_call" value="">
+    <p id="phone_status"></p><br/>
+    <label for="">이메일*</label>
+    <input type="email" id="email" value="">
+    <p id="email_status"></p><br/>
+    <label for="">패스워드(6-8글자)*</label>
+    <input type="password" id="passwords" value="">
+    <p id="password_status"></p><br/>
+    <label for="">패스워드 검증*</label>
+    <input type="password" id="password_check" value="">
+    <p id="password_check_status"></p><br/>
+    <button type="button" name="button" onclick="test5();">5번 문제</button>
+    <button type="button" name="button" onclick="test5_clear();">지우기</button>
+  </form>
+</html>

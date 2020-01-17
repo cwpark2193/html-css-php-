@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var element="";
+      function add(number){
+        element = element + number;
+        document.getElementById("display").value = element;
+      }
+      function enter(){
+        document.getElementById("display").value = eval(element);
+      }
+      function clears(){
+        element = "";
+        document.getElementById("display").value = "0";
+      }
+    </script>
+  </head>
+  <body>
+    계산 내용 : <input type="text" id="display" value="0" size="20"><br>
+    <input type="button" onclick="add('7');" value="  7  ">
+    <input type="button" onclick="add('8');" value="  8  ">
+    <input type="button" onclick="add('9');" value="  9  ">
+    <input type="button" onclick="add('/');" value="  /  "><br>
+
+    <input type="button" onclick="add('4');" value="  4  ">
+    <input type="button" onclick="add('5');" value="  5  ">
+    <input type="button" onclick="add('6');" value="  6  ">
+    <input type="button" onclick="add('*');" value="  *  "><br>
+
+    <input type="button" onclick="add('1');" value="  1  ">
+    <input type="button" onclick="add('2');" value="  2  ">
+    <input type="button" onclick="add('3');" value="  3  ">
+    <input type="button" onclick="add('-');" value="  -  "><br>
+
+    <input type="button" onclick="add('0');" value="  0  ">
+    <input type="button" onclick="add('+');" value="  +  "><br>
+
+    <input type="button" onclick="clears();" value="  clear  ">
+    <input type="button" onclick="enter();" value="  enter  "><br>
+  </body>
+</html>

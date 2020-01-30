@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function counter1(){
+        if(('localStorage'in window)&& window['localStorage']!==null){
+          if(localStorage.count1){
+            localStorage.count1++;
+          }else{
+            localStorage.count1 = 1;
+          }
+          document.getElementById("target1").innerHTML = localStorage.count1 + "번 클릭하였습니다."
+          console.log(localStorage.count1);
+        }else{
+          document.getElementById("target1").innerHTML = "브라우저가 웹스토리지를 지원하지 않습니다."
+        }
+      }
+      function counter2(){
+        if(('sessionStorage'in window)&& window['sessionStorage']!==null){
+          if(sessionStorage.count){
+            sessionStorage.count++;
+          }else{
+            sessionStorage.count = 1;
+          }
+          document.getElementById("target2").innerHTML = sessionStorage.count + "번 클릭하였습니다."
+          console.log(sessionStorage.count);
+        }else{
+          document.getElementById("target2").innerHTML = "브라우저가 웹스토리지를 지원하지 않습니다."
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p>로컬 스토리지용 방문횟수
+      <button type="button" onclick="counter1();">로컬 스토리지</button>
+    </p>
+    <div id="target1">
+
+    </div>
+    <p>세션 스토리지용 방문횟수
+      <button type="button" onclick="counter2();">세션 스토리지</button>
+    </p>
+    <div id="target2">
+
+    </div>
+  </body>
+</html>

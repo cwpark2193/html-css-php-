@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      let w;
+      function startWorker(){
+        if(typeof (Worker) !== "undefined"){
+          if(typeof(w) === "undefined"){
+            w = new Worker("worker.js");
+          }
+          w.onmessage = function(event){
+            document.getElementById("result").innerHTML = event.data;
+          };
+        }else{
+          document.getElementById("result").innerHTML = "웹 브라우저가 웹 워커를 지원하지 않음"
+        }
+      }
+      function stopWorker(){
+        w.terminate();
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" >웹 워커 시작</button>
+    <button type="button" onclick="stopWorker();">웹 워커 종료</button>
+    <p onmouseover="startWorker();">현재까지 발견된 가장 큰 소수는 <output id="result"></output></p>
+
+  </body>
+</html>

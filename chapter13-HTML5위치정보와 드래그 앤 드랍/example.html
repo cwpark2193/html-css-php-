@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #drop_zone{
+        width: 600px;
+        height: 200px;
+        padding: 10px;
+        border: 2px dashed red;
+      }
+    </style>
+    <script type="text/javascript">
+      function handleDragStart(e){
+        e.dataTransfer.effectAllowed = 'move'
+        e.dataTransfer.setData("Text",e.target.id);
+      }
+      function allowDrop(e){
+        e.preventDefault();
+      }
+      function handleDrop(e){
+        e.preventDefault();
+        let str = e.dataTransfer.getData("Text");
+        e.target.appendChild(document.getElementById(str));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="drop_zone" ondragover="allowDrop(event)" ondrop="handleDrop(event)">
+
+    </div>
+    <button type="button" id="drag_item" draggable="true" ondragstart="handleDragStart(event)">Drag me</button>
+    <br>
+    <br>
+    <h3>SVG를 이용한 사각형 생성</h3>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="500">
+      <rect width="500" height="200" style="fill: red; stroke-width: 5; stroke: blue;"/>
+    </svg>
+  </body>
+</html>

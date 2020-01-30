@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="getGeolocation();">위치정보얻기</button>
+    <div id="target">
+    </div>
+    <script type="text/javascript">
+      let myDiv = document.getElementById("target");
+      function getGeolocation(){
+        if(navigator.geolocation){
+          navigator.geolocation.getCurrentPosition(showLocation2);
+        }else{
+          alert("geolocation이 지원되지 않습니다.");
+        }
+      }
+      function showLocation1(location){
+        myDiv.innerHTML = "(위도: "+location.coords.latitude+", 경도: "+location.coords.longitude+")"
+      }
+      function showLocation2(location){
+        let pos = `위도 : ${location.coords.latitude}","경도 : ${location.coords.longitude}`;
+        let url = "http://maps.googleapis.com/maps/api/staticmap?ccenter="+pos+"&zoom=14&size=500x300&sensor=false";
+        window.open(url);
+      }
+    </script>
+  </body>
+</html>

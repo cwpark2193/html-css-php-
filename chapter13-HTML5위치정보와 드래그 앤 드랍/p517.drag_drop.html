@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #shopping_cart {
+        width: 450px;
+        height: 100px;
+        padding: 10px;
+        border: 1px dotted red;
+      }
+    </style>
+    <script type="text/javascript">
+      let count=0;
+      function handleDragStart(e){
+        e.dataTransfer.effectAllowed = 'move'; // 데이터가 변하는 효과를 허락한다 'move' 를
+        e.dataTransfer.setData("Text",e.target.id); // 변한 데이터를 "Text"로 정하고 e.target.id 타겟의 아이디를 세팅한다.
+      }
+
+      <!-- div에 영역으로 들어오는 시점이 되는 순간 -->
+      function allowDrop(e){
+        e.preventDefault();
+      }
+      // 변한 데이터 안에는 드래그 하고있는 객체의 정보도 있다.
+      function handleDrop(e){
+        e.preventDefault();
+        let src = e.dataTransfer.getData("Text");
+        e.target.appendChild(document.getElementById(src));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="shopping_cart" ondragover="allowDrop(event)" ondrop="handleDrop(event)">
+    </div>
+    <img id="img1" src="./imgs/tv.png" width="150px" height="100px" draggable="true" ondragstart="handleDragStart(event)" alt="">
+    <img id="img2" src="./imgs/audio.png" width="150px" height="100px" draggable="true" ondragstart="handleDragStart(event)" alt="">
+    <img id="img3" src="./imgs/camera.png" width="150px" height="100px" draggable="true" ondragstart="handleDragStart(event)" alt="">
+  </body>
+</html>

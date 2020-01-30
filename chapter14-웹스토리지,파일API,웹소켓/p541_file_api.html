@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function readFile(){
+        let $result = document.getElementById("result");
+        if(!(window.File) || !(window.FileReader)){
+          $result.textContent = "File API가 지원되지 않습니다.";
+          return;
+        }
+        let $files = document.getElementById("file_input").files;
+        if($files.length === 0){
+          window.alert("파일을 선택하세요");
+          return;
+        }
+        let fileReader = new FileReader();
+        fileReader.readaAsText($files[0],"euc-kr");
+        fileReader.onload = function(){
+          $result.value = fileReader.result;
+          $result.value = "내가 먼저 읽었지롱"
+        };
+        $result.value = "실행순서 꼴찌임.";
+      }
+    </script>
+  </head>
+  <body>
+    <input type="file" id="file_input" name="input" multiple="multiple">
+    <button type="button" id="readfile" onclick="readFile();">파일 읽기</button><br>
+    <textarea id="result" rows="6" cols="60"></textarea>
+  </body>
+</html>

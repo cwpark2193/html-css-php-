@@ -1,0 +1,14 @@
+#p2{
+color: blue;
+}
+.div1{
+  width: 120px;
+  height: 120px;
+  background-color: lightblue;
+  position: relative;
+}
+.div2{
+  background-color: green;
+  width: 50px;
+  position: relative;
+}
